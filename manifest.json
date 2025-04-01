@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Timeline Undo/Redo",
+  "version": "1.0",
+  "description": "Adds undo/redo functionality to YouTube video timeline",
+  "icons": {
+    "48": "icons/download.png"
+  },
+  "content_scripts": [{
+    "matches": ["*://*.youtube.com/*"],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+  }],
+  "permissions": ["storage"],
+  "action": {
+    "default_icon": "icons/download.png"
+  }
+}
